@@ -279,6 +279,7 @@ nav ul li a:hover {
   opacity: 1;
 }
 
+/* Les trucs ici cela vient du site dont on a parlé en cours, donc rien a dire sur le loader*/
 .loader-wrapper {
   position: fixed;
   top: 0;
@@ -443,4 +444,99 @@ nav ul li a:hover {
     outline-offset: 20px;
     opacity: 0;
   }
+}
+
+/* Deuxieme page, la presentation du jeu, plus quelques petit truc sympathique visuellement */
+
+.presentation-section {
+  min-height: 100vh;
+  background-color: #333333;
+}
+
+.presentation-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.presentation-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.presentation-title, .presentation-subtitle {
+  position: relative;
+  z-index: 2;
+}
+
+.presentation-title {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.presentation-subtitle {
+  font-size: 2em;
+  color: #ff4654;
+}
+
+.presentation-content {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.game-info, .game-features {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 50px;
+}
+
+.info-title, .features-title {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2.5em;
+  color: #ff4654;
+  margin-bottom: 20px;
+}
+
+.info-description {
+  font-size: 1.2em;
+  line-height: 1.8;
+  color: #f0f0f0;
+  text-align: justify;
+}
+
+.features-list {
+  text-align: left;
+  font-size: 1.2em;
+  line-height: 1.8;
+  color: #f0f0f0;
+}
+
+.features-list li {
+  padding-left: 30px;
+  position: relative;
+}
+
+.features-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #ff4654;
 }
