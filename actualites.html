@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter-Strike 2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/ce6dbcbd59.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+    <script src="java/lescrollincroyable.js"></script>
+    <script src="java/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+</style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="mobile-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="presentation.html">Présentation</a></li>
+                <li><a href="stats.html">Statistiques</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="Actualités" class="news-section">
+        <div class="news-hero">
+            <img src="VITA.jpg" alt="Fond news" class="news-bg-img">
+            <h1 class="news-title">Actualités</h1>
+            <p class="news-subtitle">Toute l'information sur les dernières nouvelles de CS2</p>
+        </div>
+
+        <div class="news-content">
+            <article class="news-item">
+                <img src="alistair.jpg" alt="Titre de l'actualité" class="news-image">
+                <h2 class="news-item-title">FlyQuest mettent sur le banc aliStair</h2>
+                <p class="news-item-description">FlyQuest a annoncé qu'elle avait décidé de mettre sur la touche Alistair « aliStair » Johnston. 
+                    Il s'agit du premier changement au sein de l'équipe Oceanic depuis qu'elle a rejoint l'organisation nord-américaine en mars 2024.
+                    Avec la mise sur le banc d'aliStair, l'équipe australienne est maintenant à la recherche d'un nouveau sniper</p>
+                <a href="https://www.hltv.org/news/40594/flyquest-bench-alistair" class="news-button" target="_blank">En savoir plus</a>
+            </article>
+            <article class="news-item">
+                <img src="monesy1.jpg" alt="Deuxième actualité" class="news-image">
+                <h2 class="news-item-title">m0NESY devrait rester à G2 malgré l'intérêt des Falcons</h2>
+                <p class="news-item-description">Ilya « m0NESY » Osipov devrait rester à G2, au moins pour la première moitié de l'année 2025, 
+                    ont indiqué plusieurs sources à HLTV et au journaliste indépendant Guillaume Rathier. Cela intervient malgré un fort intérêt pour l'AWPer russe 
+                    de la part des Falcons, qui devraient finaliser la signature de Nikola « NiKo » Kovač.</p>
+                <a href="https://www.hltv.org/news/40587/sources-m0nesy-likely-staying-at-g2-despite-falcons-interest" class="news-button" target="_blank">En savoir plus</a>
+            </article>
+            <article class="news-item">
+                <img src="donk1.jpg" alt="Troisième actualité" class="news-image">
+                <h2 class="news-item-title">donk devient le plus jeune et le plus titré des MVP majeurs à Shanghai</h2>
+                <p class="news-item-description">« Même si je suis le 150e meilleur joueur du monde, si mon équipe gagne, je serai heureux », a déclaré le prodige russe</p>                  .</p>
+                <a href="https://www.hltv.org/news/40566/donk-becomes-youngest-and-highest-rated-major-mvp-in-shanghai" class="news-button" target="_blank">En savoir plus</a>
+            </article>
+            <article class="news-item">
+                <img src="donk2.jpg" alt="Quatrième actualité" class="news-image">
+                <h2 class="news-item-title">donk sur le prix POTY : « Il devrait être décerné à celui qui présente des résultats stables tout au long de l'année ; j'ai échoué lors de deux événements."</h2>
+                <p class="news-item-description">Le jeune homme de 17 ans a mené Spirit à une victoire 2-1 en grande finale avec une note de 1,67 (c'est monstrueux, 1 c'est la moyenne des professionnels).</p>
+                <a href="https://www.hltv.org/news/40567/donk-on-poty-award-it-should-be-the-one-who-shows-stable-results-throughout-the-year-i-failed-at-two-events" class="news-button" target="_blank">En savoir plus</a>
+            </article>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Projet final SAE14, Noa</p>
+        <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
+    </footer>
+
+    <script src="java/scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let scrollElements = document.querySelectorAll('.animate-on-scroll, .image-on-scroll, .section-hero');
+            
+            function checkScroll() {
+                scrollElements.forEach(el => {
+                    let elementTop = el.getBoundingClientRect().top;
+                    let windowHeight = window.innerHeight;
+    
+                    if(elementTop < windowHeight * 0.75) {
+                        el.classList.add('active');
+                    }
+                });
+            }
+    
+            window.addEventListener('scroll', checkScroll);
+            checkScroll();
+        });
+    </script>
+</body>
+</html>

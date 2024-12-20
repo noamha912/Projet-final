@@ -11,11 +11,6 @@
     <script src="java/lescrollincroyable.js"></script>
     <script src="java/scripts.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
-<style>
-    body {
-        font-family: 'Roboto', sans-serif;
-    }
-</style>
 </head>
 <body class="lefond">
     <header class="main-header">
@@ -36,40 +31,30 @@
     </header>
 
     <main>
-        <section id="presentation" class="presentation-section">
-            <div class="presentation-hero section-hero">
-                <img src="presentation-bg.jpg" alt="Fond de présentation" class="presentation-bg-img">
-                <h1 class="presentation-title animate-on-scroll">Présentation</h1>
-                <p class="presentation-subtitle animate-on-scroll">Découvrez Counter-Strike 2</p>
+        <section id="about" class="about-section">
+            <div class="about-hero section-hero">
+                <img src="about-bg.jpg" alt="Fond about" class="about-bg-img">
+                <h1 class="about-title animate-on-scroll">À propos</h1>
+                <p class="about-subtitle animate-on-scroll">Découvrez qui se cache derrière ce site</p>
             </div>
 
-            <div class="presentation-content">
-                <div class="game-info animate-on-scroll">
-                    <h2 class="info-title">À propos de Counter-Strike 2</h2>
-                    <p class="info-description">
-                        Counter-Strike 2 est la suite attendue du jeu de tir tactique qui a révolutionné l'esport. Construit sur la plateforme Source 2, CS2 apporte des améliorations graphiques, une physique plus réaliste, et des mécaniques de jeu raffinées pour offrir une expérience encore plus immersive. 
+            <div class="about-content">
+                <div class="profile animate-on-scroll">
+                    <h2 class="profile-name">Noa</h2>
+                    <p class="profile-description">
+                        Passionné par les jeux vidéo depuis mon plus jeune âge, j'ai toujours eu un faible pour l'esport. Mon aventure dans le monde virtuel a commencé avec les premiers jeux de la série Counter-Strike, un univers où la stratégie et le travail d'équipe m'ont immédiatement captivé. 
                         <br><br>
-                        Avec un gameplay axé sur la stratégie d'équipe, 5 joueurs contre 5 joueurs, un côté appelé T comme "Terroristes" et CT pour "Anti-terroristes"
+                        J'ai suivi de nombreux jeux, mais Counter-Strike a toujours été mon préféré. J'ai passé d'innombrables heures à perfectionner mes compétences, à suivre la scène compétitive, et à admirer les prouesses des meilleurs joueurs du monde.
                         <br><br>
-                        ils doivent gérer leurs économies, achetés des armes avec l'argent qu'ils génèrent et enfin tuer toute l'équipe adverse, Counter-Strike 2 continue de défier les joueurs à travers des modes de jeu variés, de la compétition en ligne aux tournois professionnels.
+                        Ce site est ma manière de rendre hommage à l'un des plus grands jeux de tous les temps
                     </p>
-                </div>
-                <div class="game-features animate-on-scroll">
-                    <h2 class="features-title">Nouveautés et Caractéristiques</h2>
-                    <ul class="features-list">
-                        <li>Graphismes améliorés avec le moteur Source 2</li>
-                        <li>Physique des balles et du son plus réalistes</li>
-                        <li>Matchmaking avancé pour une expérience compétitive équilibrée</li>
-                        <li>Nouvelles cartes et refontes des classiques</li>
-                        <li>Système de smoke dynamique pour des stratégies plus profondes</li>
-                    </ul>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <p>Projet final SAE14, Noa</p>
+        <p>© 2024 Counter-Strike 2, Noa</p>
         <div class="social-icons">
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-x-twitter"></i>
@@ -77,7 +62,7 @@
             <i class="fa-brands fa-github"></i>
         </div>
     </footer>
-    <script src="java/scripts.js"></script>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             let scrollElements = document.querySelectorAll('.animate-on-scroll, .image-on-scroll, .section-hero');
@@ -86,17 +71,16 @@
                 scrollElements.forEach(el => {
                     let elementTop = el.getBoundingClientRect().top;
                     let windowHeight = window.innerHeight;
-    
+
                     if(elementTop < windowHeight * 0.75) {
                         el.classList.add('active');
                     }
                 });
             }
-    
+
             window.addEventListener('scroll', checkScroll);
             checkScroll();
         });
     </script>
-
 </body>
 </html>
