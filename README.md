@@ -8,4 +8,4 @@ Bienvenue sur Counter-Strike 2, votre quartier général digital pour tout ce qu
  - **JavaScript**: Pour ajouter des fonctionnalités en tout genre
 
 ## Lien vers l'Hébergement
-Explorez Counter-Strike ici: 
+Explorez Counter-Strike ici: https://noamha912.github.io/projet-final/
