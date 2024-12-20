@@ -1,5 +1,5 @@
 ## Présentation du Projet
-Bienvenue sur Counter-Strike 2, votre quartier général digital pour tout ce qui touche au monde compétitif de Counter-Strike. Que vous soyez un nouveau joueur ou un vétéran, ce site vise à vous donner les dernières actualités, ainsi que statistiques.
+Bienvenue sur Counter-Strike, votre quartier général digital pour tout ce qui touche au monde compétitif de Counter-Strike. Que vous soyez un nouveau joueur ou un vétéran, ce site vise à vous donner les dernières actualités, ainsi que statistiques.
 
 ## Technologies Utilisées
  - **HTML5 et CSS3**: Pour une structure et un style modernes, validés par W3C pour une compatibilité et un fonctionnement optimal.
